@@ -1,7 +1,16 @@
 {
-  "extends": "airbnb",
-  "rules": {
-    "comma-dangle": ["error", "only-multiline"],
-    "react/prop-types": [ "off" ]
-  }
+    "extends": "airbnb",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "react/prop-types": [
+          "off"
+      ],
+      "no-unused-expressions": 0
+    }
 }
