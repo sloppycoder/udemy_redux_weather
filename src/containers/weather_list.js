@@ -4,15 +4,15 @@ import Chart from '../components/chart';
 
 class WeatherList extends React.Component {
   renderWeather(cityData) {
-    const temperatures = cityData.list.map(l => l.main.temp);
+    const temperatures = cityData.list.map(l => l.main.temp - 273);
     const pressures = cityData.list.map(l => l.main.pressure);
     const humidities = cityData.list.map(l => l.main.humidity);
     return (
       <tr key={cityData.city.name}>
         <td>{cityData.city.name}</td>
-        <td><Chart data={temperatures} color="orange" /></td>
-        <td><Chart data={pressures} color="green" /></td>
-        <td><Chart data={humidities} color="black" /></td>
+        <td><Chart data={temperatures} color="orange" units="C" /></td>
+        <td><Chart data={pressures} color="green" units="hPa" /></td>
+        <td><Chart data={humidities} color="black" units="%" /></td>
       </tr>
     );
   }
@@ -22,9 +22,9 @@ class WeatherList extends React.Component {
         <thead>
           <tr>
             <th>City</th>
-            <th>Temperature</th>
-            <th>Pressure</th>
-            <th>Humidity</th>
+            <th>Temperature(C)</th>
+            <th>Pressure(hPa)</th>
+            <th>Humidity(%)</th>
           </tr>
         </thead>
         <tbody>
