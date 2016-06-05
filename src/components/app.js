@@ -1,7 +1,10 @@
 import React from 'react';
+import SearchBar from '../containers/search_bar';
 
 const App = () => (
-  <div>Hello Redux</div>
+  <div>
+    <SearchBar />
+  </div>
 );
 
 export default App;
