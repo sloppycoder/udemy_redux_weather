@@ -1,18 +1,12 @@
-# ReduxSimpleStarter
+# Weather app
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
-This repo is a forked from Stephen Grider's [original](https://github.com/StephenGrider/ReduxSimpleStarter) with my own customizations:
-
-* added eslint support
-* added .editorconfig
+This is the weather app for Udemy's Redux course by Stephen Grider.
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
 ```
-git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-cd ReduxSimpleStarter
+git clone git@github.com:sloppycoder/udemy_redux_weather.git
+cd udemy_redux_weather
 npm install
 npm start
 ```
